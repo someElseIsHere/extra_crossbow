@@ -1,0 +1,9 @@
+/give @s minecraft:crossbow
+/tick rate 1
+/tick rate 20
+/enchant @s minecraft:quick_charge 5
+/enchant @s minecraft:quick_charge 3
+/enchant @s minecraft:quick_charge 5
+/enchant @s minecraft:quick_charge 3
+/enchant @s minecraft:multishot
+/enchant @s minecraft:piercing

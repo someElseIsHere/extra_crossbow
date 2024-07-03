@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "extra_crossbow",
+  "version": "${version}",
+  "name": "Extra Crossbow",
+  "description": "more crossbows than ever before :')",
+  "authors": [
+    "thePlaceholder"
+  ],
+  "contact": {
+    "website": "https://modrinth.com/mod/extra-crossbow",
+    "repo": "https://github.com/someElseIsHere/ExtraCrossbow"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/extra_crossbow/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.theplaceholder.extracrossbow.client.ExtraCrossbowClient"
+    ],
+    "main": [
+      "org.theplaceholder.extracrossbow.ExtraCrossbow"
+    ]
+  },
+  "mixins": [
+    "extra_crossbow.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

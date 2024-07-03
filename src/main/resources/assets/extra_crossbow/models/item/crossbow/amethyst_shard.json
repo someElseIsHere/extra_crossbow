@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow",
+    "textures": {
+        "layer0": "extra_crossbow:item/crossbow/amethyst_shard"
+    }
+}
