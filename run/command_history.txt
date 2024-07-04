@@ -7,3 +7,14 @@
 /enchant @s minecraft:quick_charge 3
 /enchant @s minecraft:multishot
 /enchant @s minecraft:piercing
+/effect give @s extra_crossbow:dazzled infinite
+/effect clear
+/effect give @s extra_crossbow:dazzled infinite
+/effect clear
+/effect give @s extra_crossbow:dazzled 10
+/effect give @s extra_crossbow:dazzled 256
+/effect clear
+/effect give @s extra_crossbow:dazzled 256
+/effect clear
+/effect give @s extra_crossbow:dazzled 1
+/effect give @s extra_crossbow:dazzled 10

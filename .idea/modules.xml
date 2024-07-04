@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extra_crossbow.iml" filepath="$PROJECT_DIR$/.idea/modules/extra_crossbow.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/extra_crossbow.main.iml" filepath="$PROJECT_DIR$/.idea/modules/extra_crossbow.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/extra_crossbow.test.iml" filepath="$PROJECT_DIR$/.idea/modules/extra_crossbow.test.iml" />
     </modules>

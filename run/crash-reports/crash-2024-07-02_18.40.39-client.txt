@@ -4,7 +4,7 @@
 Time: 2024-07-02 18:40:39
 Description: Unexpected error
 
-java.lang.NullPointerException: Cannot invoke "org.theplaceholder.extracrossbow.projectile.Projectile.getTexture()" because the return value of "org.theplaceholder.extracrossbow.projectile.ProjectileRegistry.getProjectile(net.minecraft.item.Item)" is null
+java.lang.NullPointerException: Cannot invoke "org.theplaceholder.extracrossbow.projectile.Projectile.getTexture()" because the return value of "org.theplaceholder.extracrossbow.projectile.Projectiles.getProjectile(net.minecraft.item.Item)" is null
 	at org.theplaceholder.extracrossbow.client.ExtraCrossbowClient.lambda$onInitializeClient$0(ExtraCrossbowClient.java:25)
 	at net.minecraft.client.item.ClampedModelPredicateProvider.call(ClampedModelPredicateProvider.java:14)
 	at net.minecraft.client.render.model.json.ModelOverrideList.apply(ModelOverrideList.java:78)

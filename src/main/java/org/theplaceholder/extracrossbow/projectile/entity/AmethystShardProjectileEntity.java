@@ -30,9 +30,14 @@ public class AmethystShardProjectileEntity extends ThrownItemEntity {
     }
 
     public AmethystShardProjectileEntity(LivingEntity owner, World world, ItemStack stack) {
-        super(ProjectileEntityTypes.AMETHYST_SHARD, owner, world);
+        this(ProjectileEntityTypes.AMETHYST_SHARD, owner, world, stack);
+    }
+
+    public AmethystShardProjectileEntity(EntityType<? extends ThrownItemEntity> entityType, LivingEntity owner, World world, ItemStack stack) {
+        super(entityType, owner, world);
         this.weaponStack = stack;
     }
+
     @Override
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
@@ -100,6 +105,5 @@ public class AmethystShardProjectileEntity extends ThrownItemEntity {
                 this.getWorld().addParticle(new ItemStackParticleEffect(ParticleTypes.ITEM, this.getStack()), this.getX(), this.getY(), this.getZ(), ((double)this.random.nextFloat() - 0.5) * 0.08, ((double)this.random.nextFloat() - 0.5) * 0.08, ((double)this.random.nextFloat() - 0.5) * 0.08);
             }
         }
-
     }
 }

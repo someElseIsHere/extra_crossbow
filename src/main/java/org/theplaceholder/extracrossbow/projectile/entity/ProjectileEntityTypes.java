@@ -16,6 +16,7 @@ public class ProjectileEntityTypes {
 
     public static final EntityType<EchoShardProjectileEntity> ECHO_SHARD = register("echo_shard", EchoShardProjectileEntity::new);
     public static final EntityType<AmethystShardProjectileEntity> AMETHYST_SHARD = register("amethyst_shard", AmethystShardProjectileEntity::new);
+    public static final EntityType<GlowingAmethystShardProjectileEntity> GLOWING_AMETHYST_SHARD = register("glowing_amethyst_shard", GlowingAmethystShardProjectileEntity::new);
 
     public static <T extends ThrownItemEntity> EntityType<T> register(String name, EntityType.EntityFactory<T> factory) {
         EntityType<T> entityType = EntityType.Builder.create(factory, SpawnGroup.MISC).dimensions(0.5F, 0.5F).build(null);
@@ -23,13 +24,9 @@ public class ProjectileEntityTypes {
     }
 
     public static <T extends ThrownItemEntity> EntityType<T> register(String name, EntityType<T> entityType) {
-        ENTITY_TYPES.put(name, entityType);
+        Registry.register(Registries.ENTITY_TYPE, ExtraCrossbow.id(name), entityType);
         return entityType;
     }
 
-    public static void register() {
-        for (Map.Entry<String, EntityType<? extends ProjectileEntity>> entry : ENTITY_TYPES.entrySet()) {
-            Registry.register(Registries.ENTITY_TYPE, ExtraCrossbow.id(entry.getKey()), entry.getValue());
-        }
-    }
+    public static void init() {}
 }

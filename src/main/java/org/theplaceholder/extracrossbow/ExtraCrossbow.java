@@ -2,7 +2,8 @@ package org.theplaceholder.extracrossbow;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
-import org.theplaceholder.extracrossbow.projectile.ProjectileRegistry;
+import org.theplaceholder.extracrossbow.effect.ECStatusEffects;
+import org.theplaceholder.extracrossbow.projectile.Projectiles;
 import org.theplaceholder.extracrossbow.projectile.entity.ProjectileEntityTypes;
 
 public class ExtraCrossbow implements ModInitializer {
@@ -10,8 +11,9 @@ public class ExtraCrossbow implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ProjectileRegistry.register();
-        ProjectileEntityTypes.register();
+        Projectiles.register();
+        ProjectileEntityTypes.init();
+        ECStatusEffects.init();
     }
 
     public static Identifier id(String path) {
